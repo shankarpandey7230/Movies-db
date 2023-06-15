@@ -16,3 +16,9 @@ npx create-react-app@latest
 
 const url =
 "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
+
+# API Key for Movies
+
+https://www.omdbapi.com/
+
+#DECLARE ENV VARIABLE in the root folder
