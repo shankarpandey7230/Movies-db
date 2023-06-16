@@ -133,6 +133,11 @@ p {
     width: 95vw;
   }
 }
+/*
+=============== 
+Search
+===============
+*/
 .search-form {
   width: 90vw;
   max-width: var(--max-width);
@@ -158,11 +163,12 @@ p {
   padding-top: 0.5rem;
   letter-spacing: var(--spacing);
 }
-
-/* 
-========
+/*
+=============== 
 Loading
-======== */
+===============
+*/
+
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -179,6 +185,7 @@ Loading
   border-top-color: var(--clr-primary-5);
   animation: spinner 0.6s linear infinite;
 }
+
 /*
 =============== 
 Movies
@@ -224,9 +231,47 @@ Movies
 .movie:hover .movie-info {
   transform: translateY(0);
 }
-
 @media screen and (min-width: 576px) {
   .movies {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+/*
+=============== 
+Single Movie
+===============
+*/
+
+.single-movie {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  display: grid;
+  gap: 2rem;
+}
+.single-movie img {
+  width: 100%;
+  display: block;
+}
+.single-movie p {
+  max-width: 35em;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+.btn {
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  display: inline-block;
+  margin-top: 0.5rem;
+  letter-spacing: var(--spacing);
+}
+@media screen and (min-width: 992px) {
+  .single-movie {
+    grid-template-columns: 1fr 2fr;
   }
 }
