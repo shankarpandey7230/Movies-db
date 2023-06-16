@@ -1,10 +1,16 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Home from "./Home";
-import SingleMovie from "./SingleMovie";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
-  return <h2>App</h2>;
-};
+import Home from "./Home";
+import Movie from "./SingleMovie";
+
+function App() {
+  return (
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/movies/:id" element={<Movie />} />
+    </Routes>
+  );
+}
 
 export default App;

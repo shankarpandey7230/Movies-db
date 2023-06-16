@@ -22,3 +22,7 @@ const url =
 https://www.omdbapi.com/
 
 #DECLARE ENV VARIABLE in the root folder
+
+# React Router version 6
+
+Switch is Replaced by Routes
